@@ -3,9 +3,10 @@ import time
 from pytube import Playlist
 from moviepy.editor import *
 import os,sys
+
+
 def videodownload():
     
-
     playlistLink = input("Enter the link (Please, make sure it is correct.):")
     if playlistLink.__contains__("https://www.youtube.com/playlist?list="):    
         playlist = Playlist(playlistLink)
@@ -53,10 +54,8 @@ def videodownload():
         print("Please enter a valid link")
         videodownload()
 
-
-
-
 def audiodownload():
+    
     playlistLink = input("Enter the link (Please, make sure it is correct.):")
     if playlistLink.__contains__("https://www.youtube.com/playlist?list="):   
         playlist = Playlist(playlistLink)
